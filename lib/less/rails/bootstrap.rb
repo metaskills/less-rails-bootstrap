@@ -1,2 +1,2 @@
 require "less/rails/bootstrap/version"
-require "less/rails/bootstrap/railtie"
+require "less/rails/bootstrap/engine"

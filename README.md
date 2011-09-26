@@ -3,7 +3,11 @@
 
 Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more. To get started -- checkout http://twitter.github.com/bootstrap!
 
-The less-rails-bootstrap project hooks into less-rails (https://github.com/metaskills/less-rails) to provide both compiled and Less CSS source files from the Twitter Bootstrap project within the Rails 3.1 asset pipeline.
+The less-rails-bootstrap project hooks into less-rails (https://github.com/metaskills/less-rails) to provide both compiled and LESS CSS source files from the Twitter Bootstrap project within the Rails 3.1 asset pipeline. Benefits:
+
+* Assets are namespaced in twitter/bootstrap to avoid asset conflicts.
+* Top level requires to get all stylesheets or javascripts.
+* 
 
 
 ## Versioning
@@ -13,17 +17,67 @@ This gem will directly track the semantic versioning releases of the Twitter Boo
 
 ## Installing
 
-Until I publish this gem.
+Until I publish the gem.
 
 ```ruby
 gem 'less-rails-bootstrap', :git => 'git://github.com/metaskills/less-rails.git'
+```
+
+After I publish the gem.
+
+```ruby
 gem 'less-rails-bootstrap', '1.3.0' 
 ```
 
 
 ## Usage
 
-Coming soon...
+The easiest way to use Twitter Bootstrap is require it in your `application.css` file. Doing so will compile the libraries LESS files.
+
+```css
+/*
+ *= require twitter/bootstrap
+*/
+
+#foo {
+  /* Your styles... */
+}
+```
+
+In a file with the `.css.less` extension, you can import the entire Bootstrap LESS framework. This will allow you to use Bootstrap's variables and mixins in your CSS that follows. Remember, unlike other CSS frameworks, requiring or importing Bootstrap will include all the CSS for building a bootstrapped website. If you only want variables or mixins, you will have to import those discreet files.
+
+```css
+@import "twitter/bootstrap";
+
+#foo {
+  .border-radius(4px);
+}
+```
+
+Maybe all you want to use is the variables and mixins that come with Twitter Bootstrap. No problem, just import them individually from you own `.css.less` file. In this case only the `#foo` selector is output.
+
+```css
+@import "twitter/bootstrap/variables";
+@import "twitter/bootstrap/mixins";
+
+.myButton(@radius: 5px) {
+  .border-radius(@radius);
+}
+
+#foo {
+  .myButton(10px);
+}
+```
+
+Using the JavaScript files is just as easy. Again, you can include all them with a single directive from your `application.js` file. Optionally, you can require only the files you need like `require twitter/bootstrap/modal`.
+
+```javascript
+//= require twitter/bootstrap
+
+$(document).ready(function(){
+  
+});
+```
 
 
 ## License
