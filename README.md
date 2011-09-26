@@ -17,11 +17,10 @@ This gem will directly track the semantic versioning releases of the Twitter Boo
 
 ## Installing
 
-This library requires the less-rails gem to work. Unfortunately, I have yet to publish my gem in the abandoned less-rails space on rubygems.org. Till then, please bundle less-rails using the git repo.
+This library requires the less-rails gem greater than 2.0.0 to work. Our gem spec will pull this and less in automatically. So all you need to do is bundle up less-rails-bootstrap in your Gemfle.
 
 ```ruby
-gem 'less-rails', :git => 'git://github.com/metaskills/less-rails.git'
-gem 'less-rails-bootstrap', '1.3.0' 
+gem 'less-rails-bootstrap'
 ```
 
 
