@@ -27,7 +27,7 @@ gem 'less-rails-bootstrap', '1.3.0'
 
 ## Usage
 
-The easiest way to use Twitter Bootstrap is require it in your `application.css` file. Doing so will compile the libraries LESS files.
+The easiest way to use Twitter Bootstrap is require it in your `application.css` file. Doing so will compile the complete LESS libraries files for Bootstrap.
 
 ```css
 /*
