@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.3.1 (Sept 26, 2011)
+---------------------
+
+* Require twipsy before popover [stratequip]
+
+
 1.3.0 (Sept 25, 2011)
 ---------------------
 
