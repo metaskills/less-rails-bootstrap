@@ -7,7 +7,7 @@ The less-rails-bootstrap project hooks into less-rails (https://github.com/metas
 
 * Assets are namespaced in twitter/bootstrap to avoid asset conflicts.
 * Top level requires to get all stylesheets or javascripts.
-* 
+* Ability to import or require individually namespaced stylesheets or javascripts.
 
 
 ## Versioning
