@@ -5,4 +5,5 @@ module Less
   end
 end
 
+require 'less/rails'
 require "less/rails/bootstrap"
