@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.3.2 (Sept 28, 2011)
+---------------------
+
+* Require less-rails properly. Thanks Benoit Bénézech (bbenezech).
+
+
 1.3.1 (Sept 26, 2011)
 ---------------------
 
