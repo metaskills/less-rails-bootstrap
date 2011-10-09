@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.3.3 (unreleased)
+
+* New test setup and hopefully a more sane engine initializer.
+
+
 1.3.2 (Sept 28, 2011)
 ---------------------
 

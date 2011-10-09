@@ -3,9 +3,8 @@ module Less
     module Bootstrap
       class Engine < ::Rails::Engine
         
-        config.after_initialize do |app|
-          bootstrap_less_files = config.root + 'vendor/stylesheets/twitter/bootstrap'
-          app.config.less.paths << bootstrap_less_files
+        initializer 'less-rails-bootstrap.setup', :after => 'less-rails.after.load_config_initializers', :group => :all do |app|
+          app.config.less.paths << File.join(config.root, 'vendor', 'assets', 'stylesheets')
         end
         
       end
