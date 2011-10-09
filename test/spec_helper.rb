@@ -40,7 +40,11 @@ module Less
         end
         
         def project_root
-          File.expand_path File.join(File.dirname(__FILE__), '..', 'vendor', 'assets', 'stylesheets')
+          File.expand_path File.join(File.dirname(__FILE__), '..')
+        end
+        
+        def project_vendor_twitter_bootstrap
+          File.join project_root, 'vendor', 'frameworks'
         end
 
       end

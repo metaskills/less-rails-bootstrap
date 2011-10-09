@@ -3,6 +3,7 @@ CHANGELOG
 
 1.3.3 (unreleased)
 
+* Move bootstrap LESS files to vendor/frameworks. Should fix assets:precompile bugs.
 * New test setup and hopefully a more sane engine initializer.
 
 
