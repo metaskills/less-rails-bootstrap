@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["ken@metaskills.net"]
   s.homepage    = "http://github.com/metaskills/less-rails-bootstrap"
   s.summary     = %q{CSS toolkit from Twitter For Rails 3.1 Asset Pipeline}
-  s.description = %q{CSS toolkit from Twitter For Rails 3.1 Asset Pipeline}
+  s.description = %q{CSS toolkit from Twitter For Rails 3.1 Asset Pipeline. Best one of all!}
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
