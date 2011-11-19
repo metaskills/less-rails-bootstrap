@@ -74,6 +74,14 @@ $(document).ready(function(){
 ```
 
 
+## Testing
+
+Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests too. Current build status is:
+
+[![Build Status](https://secure.travis-ci.org/metaskills/less-rails-bootstrap.png)](http://travis-ci.org/metaskills/less-rails-bootstrap)
+
+
+
 ## License
 
 Twitter Bootstrap Project: http://twitter.github.com/bootstrap
