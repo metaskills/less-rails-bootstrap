@@ -80,6 +80,9 @@ Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. T
 
 [![Build Status](https://secure.travis-ci.org/metaskills/less-rails-bootstrap.png)](http://travis-ci.org/metaskills/less-rails-bootstrap)
 
+We also have a test rails project setup using all the examples documented above. If you make a github issue and complain about something, I will likely forward you to this project.
+
+[https://github.com/metaskills/less-rails-bootstrap-test](https://github.com/metaskills/less-rails-bootstrap-test)
 
 
 ## License
