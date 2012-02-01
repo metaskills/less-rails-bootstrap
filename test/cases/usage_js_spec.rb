@@ -7,13 +7,11 @@ class UsageJsSpec < Less::Rails::Bootstrap::Spec
     let(:app_js) { dummy_asset('application.js') }
     
     it 'will render main bootstrap.js file and all included modules' do
-      app_js.must_include 'bootstrap-alerts.js'
-      app_js.must_include 'bootstrap-dropdown.js'
-      app_js.must_include 'bootstrap-modal.js'
-      app_js.must_include 'bootstrap-popover.js'
-      app_js.must_include 'bootstrap-scrollspy.js'
-      app_js.must_include 'bootstrap-tabs.js'
-      app_js.must_include 'bootstrap-twipsy.js'
+      files = ['alert', 'button', 'carousel', 'collapse', 'dropdown', 'modal',
+               'popover', 'scrollspy', 'tab', 'tooltip', 'transition', 'typeahead']
+      files.each do |file|
+        app_js.must_include "bootstrap-#{file}.js"
+      end
     end
     
     it 'must include basic js afterward' do
