@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.1 - 01/31/2011
+
+* Package up Glyphicons and use less-rails' asset-url() helper.
+
+
 2.0.0 - 01/31/2011
 
 * Update to Twitter Bootstrap 2.0.0

@@ -14,6 +14,11 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
       app_css.must_include '#other-css { color: red; }',  'From our code afterward.'
     end
     
+    it 'uses less-rails asset-url helper for images' do
+      app_css.must_include 'url(/assets/twitter/bootstrap/glyphicons-halflings.png)'
+      app_css.must_include 'url(/assets/twitter/bootstrap/glyphicons-halflings-white.png)'
+    end
+    
   end
   
   describe 'framework.css.less' do
