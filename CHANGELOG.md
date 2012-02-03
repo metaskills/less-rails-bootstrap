@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.3 - 02-03/2012
+
+* Fix IE9 background hack from bootstrap upstream.
+
+
 2.0.2 - 02/01/2012
 
 * Change require order for tooltip.js [Rufus Post]
