@@ -1,9 +1,10 @@
 CHANGELOG
 =========
 
-2.0.3 - 02-03/2012
+2.0.3, 2.0.4 - 02-03/2012
 
 * Fix IE9 background hack from bootstrap upstream.
+* Misc border-radius 0px fixes.
 
 
 2.0.2 - 02/01/2012
