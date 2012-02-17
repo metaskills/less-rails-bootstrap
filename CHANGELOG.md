@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.5 - 02/15/2012
+
+* Fix .nav-list .active > a:hover Fixes #30
+
+
 2.0.3, 2.0.4 - 02-03/2012
 
 * Fix IE9 background hack from bootstrap upstream.
