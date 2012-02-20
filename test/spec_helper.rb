@@ -1,6 +1,14 @@
 require 'rubygems'
 require 'bundler'
-Bundler.require
+
+begin
+  Bundler.setup(:default, :development)
+rescue Bundler::BundlerError => e
+  $stderr.puts e.message
+  $stderr.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
+
 require 'less-rails-bootstrap'
 require 'minitest/spec'
 require 'minitest/autorun'
@@ -38,11 +46,11 @@ module Less
           dummy_assets.version = SecureRandom.hex(32)
           dummy_assets.cache.clear
         end
-        
+
         def project_root
           File.expand_path File.join(File.dirname(__FILE__), '..')
         end
-        
+
         def project_vendor_twitter_bootstrap
           File.join project_root, 'vendor', 'frameworks'
         end
