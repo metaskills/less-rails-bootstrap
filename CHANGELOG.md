@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.6 - 02/15/2012
+
+* Update to official bootstrap 2.0.1
+
+
 2.0.5 - 02/15/2012
 
 * Fix .nav-list .active > a:hover Fixes #30
