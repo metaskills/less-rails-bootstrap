@@ -26,44 +26,12 @@ gem 'less-rails-bootstrap'
 
 ## Usage
 
-The easiest way to use Twitter Bootstrap is require it in your `application.css` file. Doing so will compile the complete LESS libraries files for Bootstrap.
+Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) project for working examples of how to use less.rb, less-rails, and less-rails-bootstrap in any way possible. The "CSS Tests Suites" section of the README and code is what you want to focus on.
 
-```css
-/*
- *= require twitter/bootstrap
-*/
 
-#foo {
-  /* Your styles... */
-}
-```
+### JavaScript Usage
 
-In a file with the `.css.less` extension, you can import the entire Bootstrap LESS framework. This will allow you to use Bootstrap's variables and mixins in your CSS that follows. Remember, unlike other CSS frameworks, requiring or importing Bootstrap will include all the CSS for building a bootstrapped website. If you only want variables or mixins, you will have to import those discreet files.
-
-```css
-@import "twitter/bootstrap";
-
-#foo {
-  .border-radius(4px);
-}
-```
-
-Maybe all you want to use is the variables and mixins that come with Twitter Bootstrap. No problem, just import them individually from you own `.css.less` file. In this case only the `#foo` selector is output.
-
-```css
-@import "twitter/bootstrap/variables";
-@import "twitter/bootstrap/mixins";
-
-.myButton(@radius: 5px) {
-  .border-radius(@radius);
-}
-
-#foo {
-  .myButton(10px);
-}
-```
-
-Using the JavaScript files is just as easy. Again, you can include all them with a single directive from your `application.js` file. Optionally, you can require only the files you need like `require twitter/bootstrap/modal`.
+Using the JavaScript files is just as easy. You can include all them with a single directive from your `application.js` file. Optionally, you can require only the files you need like `require twitter/bootstrap/modal`.
 
 ```javascript
 //= require twitter/bootstrap
