@@ -1,7 +1,12 @@
 CHANGELOG
 =========
 
-2.0.7 - 0313/2012
+2.0.8 - 03/13/2012
+
+* Fix icon sprite paths. Seems they are real paths now.
+
+
+2.0.7 - 03/13/2012
 
 * Update to official bootstrap 2.0.2
 
