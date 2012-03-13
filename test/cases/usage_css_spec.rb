@@ -15,8 +15,8 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
     end
 
     it 'uses less-rails asset-url helper for images' do
-      app_css.must_include 'url(/assets/twitter/bootstrap/glyphicons-halflings.png)'
-      app_css.must_include 'url(/assets/twitter/bootstrap/glyphicons-halflings-white.png)'
+      app_css.must_include 'url("/assets/twitter/bootstrap/glyphicons-halflings.png")'
+      app_css.must_include 'url("/assets/twitter/bootstrap/glyphicons-halflings-white.png")'
     end
 
   end
