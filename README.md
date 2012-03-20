@@ -1,4 +1,3 @@
-
 # Less Rails Bootstrap
 
 Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more. To get started -- checkout http://twitter.github.com/bootstrap!
@@ -44,7 +43,7 @@ $(document).ready(function(){
 
 ## Testing
 
-Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests too. Current build status is:
+Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests. The current build status is:
 
 [![Build Status](https://secure.travis-ci.org/metaskills/less-rails-bootstrap.png)](http://travis-ci.org/metaskills/less-rails-bootstrap)
 
