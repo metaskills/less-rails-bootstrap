@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.9 - 04/04/2012
+
+* Bumping the less-rails depedency so everyone can use therubyracer 0.10.0.
+
+
 2.0.8 - 03/13/2012
 
 * Fix icon sprite paths. Seems they are real paths now.
