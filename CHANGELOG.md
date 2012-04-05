@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.10 - 04/04/2012
+
+* Include a way to require the responsive responsive file.
+
+
 2.0.9 - 04/04/2012
 
 * Bumping the less-rails depedency so everyone can use therubyracer 0.10.0.
