@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.0.11 - 04/25/2012
+
+* Update to bootstrap 2.0.3.
+
+
 2.0.10 - 04/04/2012
 
 * Include a way to require the responsive responsive file.
