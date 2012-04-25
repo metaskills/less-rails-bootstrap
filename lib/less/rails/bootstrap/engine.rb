@@ -1,3 +1,5 @@
+require 'rails'
+
 module Less
   module Rails
     module Bootstrap
