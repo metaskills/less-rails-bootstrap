@@ -56,6 +56,18 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
 
   end
 
+  describe 'split.css.less' do
+
+    before { dummy_config.less.compress = true }
+
+    let(:css_content) { dummy_asset('split.css') }
+
+    it 'will render bootstrap in two steps, easily allowing overrides in between' do
+      line = line_for_css('body')
+      line.must_include 'font-size:999px'
+    end
+  end
+
 
   private
 
