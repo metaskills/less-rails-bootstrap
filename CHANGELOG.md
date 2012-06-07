@@ -21,6 +21,11 @@ CHANGELOG
 * Use bootstrap 2.1.0. Thanks @vickash.
 
 
+2.0.13 - 06/07/2012
+
+* Update to bootstrap 2.0.4.
+
+
 2.0.12 - 04/25/2012
 
 * Work with latest less.rb v2.2.1.
