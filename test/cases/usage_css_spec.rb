@@ -25,17 +25,17 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
 
     before { dummy_config.less.compress = true }
 
-    let(:framework_css) { dummy_asset('framework.css') }
+    let(:css_content) { dummy_asset('framework.css') }
 
     it 'will render bootstrap functions' do
-      border_radius_line = line_for_framework_css('framework-border-radius')
+      border_radius_line = line_for_css('#framework-border-radius')
       border_radius_line.must_include '-webkit-border-radius:4px'
       border_radius_line.must_include '-moz-border-radius:4px'
       border_radius_line.must_include 'border-radius:4px'
     end
 
     it 'will render bootstrap variables' do
-      link_color_line = line_for_framework_css('framework-linkColor')
+      link_color_line = line_for_css('#framework-linkColor')
       link_color_line.must_include 'color:#0088cc;'
     end
 
@@ -45,10 +45,10 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
 
     before { dummy_config.less.compress = true }
 
-    let(:individual_css) { dummy_asset('individual.css') }
+    let(:css_content) { dummy_asset('individual.css') }
 
     it 'will render bootstrap variables and mixins' do
-      my_button_line = line_for_individual_css('individual-my-button')
+      my_button_line = line_for_css('#individual-my-button')
       my_button_line.must_include '-webkit-border-radius:10px'
       my_button_line.must_include '-moz-border-radius:10px'
       my_button_line.must_include 'border-radius:10px'
@@ -56,15 +56,23 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
 
   end
 
+  describe 'split.css.less' do
+
+    before { dummy_config.less.compress = true }
+
+    let(:css_content) { dummy_asset('split.css') }
+
+    it 'will render bootstrap in two steps, easily allowing overrides in between' do
+      line = line_for_css('body')
+      line.must_include 'font-size:999px'
+    end
+  end
+
 
   private
 
-  def line_for_framework_css(name)
-    framework_css.each_line.detect{ |line| line.include? name }.strip
-  end
-
-  def line_for_individual_css(name)
-    individual_css.each_line.detect{ |line| line.include? name }.strip
+  def line_for_css(selector)
+    css_content.each_line.detect{ |line| line.match(/^#{selector}/) }.strip
   end
 
 end
