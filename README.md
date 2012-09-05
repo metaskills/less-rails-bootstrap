@@ -1,44 +1,62 @@
 # Less Rails Bootstrap
 
-Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more. To get started -- checkout http://twitter.github.com/bootstrap!
+Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://twitter.github.com/bootstrap).
 
-The less-rails-bootstrap project hooks into less-rails (https://github.com/metaskills/less-rails) to provide both compiled and LESS CSS source files from the Twitter Bootstrap project within the Rails 3.1 asset pipeline. Benefits:
+The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 3.1+ asset pipeline. 
+
+The benefits:
 
 * Assets are namespaced in twitter/bootstrap to avoid asset conflicts.
 * Top level requires to get all stylesheets or javascripts.
 * Ability to import or require individually namespaced stylesheets or javascripts.
 
 
-## Versioning
+## Installation
 
-This gem will directly track the semantic versioning releases of the Twitter Bootstrap project. Our major and minor versions will always match to theirs. Tho we may have tiny patch level releases specific to this gem.
-
-
-## Installing
-
-This library requires the less-rails gem greater than 2.0.0 to work. Our gem spec will pull this and less in automatically. So all you need to do is bundle up less-rails-bootstrap in your Gemfle.
+LESS requires a JavaScript runtime to work. Which one you use depends on your Ruby implementation. Two are shown for Ruby (MRI) and JRuby. Add only the relevant one to your Gemfile. If you want to use Bootstrap's JavaScript plugins, also add the `jquery-rails` gem. Finally, add `less-rails-bootstrap` and run `bundle install`.
 
 ```ruby
+# Gemfile
+
+gem 'therubyracer'  # If using Ruby
+gem 'therubyrhino'  # If using JRuby
+gem 'jquery-rails'  # If using Bootstrap's JS plugins.
 gem 'less-rails-bootstrap'
 ```
 
+## Basic CSS Use
 
-## Usage
+Get the full Bootstrap stylesheet with a single line in your `application.css`.
 
-Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) project for working examples of how to use less.rb, less-rails, and less-rails-bootstrap in any way possible. The "CSS Tests Suites" section of the README and code is what you want to focus on.
+````css
+/*
+  *= require twitter/bootstrap
+*/
+````
+Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
 
+## Basic JavaScript Use
 
-### JavaScript Usage
-
-Using the JavaScript files is just as easy. You can include all them with a single directive from your `application.js` file. Optionally, you can require only the files you need like `require twitter/bootstrap/modal`.
-
-```javascript
+In `application.js`, require jQuery first. Now you can add all the Bootstrap plugins with a single line.
+````javascript
+//= require jquery
+//= require jquery_ujs
 //= require twitter/bootstrap
+````
 
-$(document).ready(function(){
-  
-});
-```
+Or include plugins individually.
+
+````javascript
+//= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap/modal
+//= require twitter/bootstrap/alert
+````
+
+
+## Versioning
+
+This gem will directly track the semantic versioning of the Twitter Bootstrap project. Our major and minor versions will always match to theirs, though we may have tiny patch level releases specific to this gem.
 
 
 ## Testing
