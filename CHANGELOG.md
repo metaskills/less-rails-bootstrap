@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.1.1 - 09/05/2012
+
+* Use bootstrap 2.1.1. Thanks @erdah.
+
+
 2.1.0 - 08/21/2012
 
 * Use bootstrap 2.1.0. Thanks @vickash.
