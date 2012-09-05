@@ -28,17 +28,17 @@ gem 'less-rails-bootstrap'
 
 Get the full Bootstrap stylesheet with a single line in your `application.css`.
 
-````css
-/*
-  *= require twitter/bootstrap
-*/
-````
+    /*
+      *= require twitter/bootstrap
+    */
+
 Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
 
 ## Basic JavaScript Use
 
 In `application.js`, require jQuery first. Now you can add all the Bootstrap plugins with a single line.
-````javascript
+
+````
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
@@ -46,7 +46,7 @@ In `application.js`, require jQuery first. Now you can add all the Bootstrap plu
 
 Or include plugins individually.
 
-````javascript
+````
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap/modal
