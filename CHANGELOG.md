@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.2.1 - 01/14/2012
+
+* Update bootstrap to 2.2.2. Thanks to @trentclowater
+
+
 2.2.0 - 10/31/2012
 
 * Update bootstrap to 2.2.1. Thanks to @spider-network
