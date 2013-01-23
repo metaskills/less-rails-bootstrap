@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-2.2.1 - 01/14/2012
+2.2.1 - 01/14/2013
 
 * Update bootstrap to 2.2.2. Thanks to @trentclowater
 
