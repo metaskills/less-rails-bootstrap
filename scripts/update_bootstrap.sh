@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bs_dir='../../twitter/bootstrap'
+bs_dir='../twitter/bootstrap'
 lrb_dir='.'
 lrb_img_dir="$lrb_dir/vendor/assets/images/twitter/bootstrap"
 lrb_js_dir="$lrb_dir/vendor/assets/javascripts/twitter/bootstrap"
