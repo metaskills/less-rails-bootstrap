@@ -93,32 +93,24 @@ table {
   tbody:first-child tr:first-child td {
     border-top: 0;
   }
-  // For first th/td in the first row in the first thead or tbody
+  // For first th or td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:first-child,
-  tbody:first-child tr:first-child > td:first-child,
-  tbody:first-child tr:first-child > th:first-child {
+  tbody:first-child tr:first-child > td:first-child {
     .border-top-left-radius(@baseBorderRadius);
   }
-  // For last th/td in the first row in the first thead or tbody
   thead:first-child tr:first-child > th:last-child,
-  tbody:first-child tr:first-child > td:last-child,
-  tbody:first-child tr:first-child > th:last-child {
+  tbody:first-child tr:first-child > td:last-child {
     .border-top-right-radius(@baseBorderRadius);
   }
-  // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
+  // For first th or td in the last row in the last thead or tbody
   thead:last-child tr:last-child > th:first-child,
   tbody:last-child tr:last-child > td:first-child,
-  tbody:last-child tr:last-child > th:first-child,
-  tfoot:last-child tr:last-child > td:first-child,
-  tfoot:last-child tr:last-child > th:first-child {
+  tfoot:last-child tr:last-child > td:first-child {
     .border-bottom-left-radius(@baseBorderRadius);
   }
-  // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
   thead:last-child tr:last-child > th:last-child,
   tbody:last-child tr:last-child > td:last-child,
-  tbody:last-child tr:last-child > th:last-child,
-  tfoot:last-child tr:last-child > td:last-child,
-  tfoot:last-child tr:last-child > th:last-child {
+  tfoot:last-child tr:last-child > td:last-child {
     .border-bottom-right-radius(@baseBorderRadius);
   }
 
@@ -129,6 +121,7 @@ table {
   tfoot + tbody:last-child tr:last-child td:last-child {
     .border-bottom-right-radius(0);
   }
+
 
   // Special fixes to round the left border on the first td/th
   caption + thead tr:first-child th:first-child,
@@ -168,8 +161,8 @@ table {
 // Placed here since it has to come after the potential zebra striping
 .table-hover {
   tbody {
-    tr:hover > td,
-    tr:hover > th {
+    tr:hover td,
+    tr:hover th {
       background-color: @tableBackgroundHover;
     }
   }
@@ -213,32 +206,32 @@ table th[class*="span"],
 // Exact selectors below required to override .table-striped
 
 .table tbody tr {
-  &.success > td {
+  &.success td {
     background-color: @successBackground;
   }
-  &.error > td {
+  &.error td {
     background-color: @errorBackground;
   }
-  &.warning > td {
+  &.warning td {
     background-color: @warningBackground;
   }
-  &.info > td {
+  &.info td {
     background-color: @infoBackground;
   }
 }
 
 // Hover states for .table-hover
 .table-hover tbody tr {
-  &.success:hover > td {
+  &.success:hover td {
     background-color: darken(@successBackground, 5%);
   }
-  &.error:hover > td {
+  &.error:hover td {
     background-color: darken(@errorBackground, 5%);
   }
-  &.warning:hover > td {
+  &.warning:hover td {
     background-color: darken(@warningBackground, 5%);
   }
-  &.info:hover > td {
+  &.info:hover td {
     background-color: darken(@infoBackground, 5%);
   }
 }
