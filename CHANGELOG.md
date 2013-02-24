@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.3.0 - 02/24/2013
+
+* Update boostrap to 2.3.0. Thanks to all that helped!
+
+
 2.2.1 - 01/14/2013
 
 * Update bootstrap to 2.2.2. Thanks to @trentclowater
