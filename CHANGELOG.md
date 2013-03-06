@@ -4,6 +4,7 @@ CHANGELOG
 2.3.2 - 03/06/2013
 
 * Update to less-rails 2.3.1. Really uses less v1.3.3
+* Update boostrap to 2.3.1.
 
 
 2.3.1 - 03/06/2013
