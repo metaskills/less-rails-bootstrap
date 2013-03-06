@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+2.3.1 - 03/06/2013
+
+* Update to less-rails 2.3.0.
+
+
 2.3.0 - 02/24/2013
 
 * Update boostrap to 2.3.0. Thanks to all that helped!
