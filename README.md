@@ -35,7 +35,7 @@ Get the full Bootstrap stylesheet with a single line in your `application.css`.
 If you wish to make use of Bootstraps' responsive features, like the collapsing of your navigation bar on window resize, make sure to include bootstrap-responsive as well.
 
     /*
-      *= require twiiter/bootstrap-responsive
+      *= require twitter/bootstrap-responsive
     */
 
 Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
