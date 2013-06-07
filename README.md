@@ -2,7 +2,7 @@
 
 Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://twitter.github.com/bootstrap).
 
-The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 3.1+ asset pipeline. 
+The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 3.1+ asset pipeline.
 
 The benefits:
 
@@ -31,14 +31,14 @@ Get the full Bootstrap stylesheet with a single line in your `application.css`.
     /*
       *= require twitter/bootstrap
     */
-    
+
 If you wish to make use of Bootstraps' responsive features, like the collapsing of your navigation bar on window resize, make sure to include bootstrap-responsive as well.
 
     /*
       *= require twitter/bootstrap-responsive
     */
 
-Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
+Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/).
 
 ## Basic JavaScript Use
 
@@ -65,6 +65,23 @@ Or include plugins individually.
 This gem will directly track the semantic versioning of the Twitter Bootstrap project. Our major and minor versions will always match to theirs, though we may have tiny patch level releases specific to this gem.
 
 
+## Updating
+
+We already have a update script to get latest version of twitter bootstrap, follow this steps:
+
+```bash
+# clone from the oficial repo
+git clone git@github.com:twitter/bootstrap.git twitter/bootstrap/
+```
+
+```bash
+# run the update script
+bash scripts/update_bootstrap.sh
+```
+
+This will update the version of twitter bootstrap then you can make a PR :)
+
+
 ## Testing
 
 Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests. The current build status is:
@@ -74,17 +91,6 @@ Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. T
 We also have a test rails project setup using all the examples documented above. If you make a github issue and complain about something, I will likely forward you to this project.
 
 [https://github.com/metaskills/less-rails-bootstrap-test](https://github.com/metaskills/less-rails-bootstrap-test)
-
-
-## Contributing
-
-Here are the steps to update the version of twitter bootstrap used.
-
-* Clone this repository.
-* Clone the [bootstrap repo](https://github.com/twitter/bootstrap) in a twitter/bootstrap directory next to the clone of less-rails-bootstrap done above.
-* Change directories into the twitter/bootstrap clone and do a git checkout on the version you are targeting. For example `git checkout v2.3.0`. This will setup the proper version to copy over.
-* Back in the less-rails-bootstrap project. Run the `./scripts/update_bootstrap.sh` script.
-* RUN THE TESTS!
 
 
 ## License
