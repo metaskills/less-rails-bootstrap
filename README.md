@@ -65,6 +65,23 @@ Or include plugins individually.
 This gem will directly track the semantic versioning of the Twitter Bootstrap project. Our major and minor versions will always match to theirs, though we may have tiny patch level releases specific to this gem.
 
 
+## Updating
+
+We already have a update script to get latest version of twitter bootstrap, follow this steps:
+
+```bash
+# clone from the oficial repo
+git clone git@github.com:twitter/bootstrap.git twitter/bootstrap/
+```
+
+```bash
+# run the update script
+bash scripts/update_bootstrap.sh
+```
+
+This will update the version of twitter bootstrap then you can make a PR :)
+
+
 ## Testing
 
 Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests. The current build status is:
