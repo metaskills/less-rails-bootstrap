@@ -1,9 +1,8 @@
 require 'rubygems'
 require 'bundler'
 Bundler.require
-require 'less-rails-bootstrap'
-require 'minitest/spec'
 require 'minitest/autorun'
+require 'less-rails-bootstrap'
 require 'dummy_app/init'
 
 module Less

@@ -10,4 +10,3 @@
 //= require twitter/bootstrap/scrollspy.js
 //= require twitter/bootstrap/tab.js
 //= require twitter/bootstrap/transition.js
-//= require twitter/bootstrap/typeahead.js
