@@ -1,4 +1,6 @@
-# Less Rails Bootstrap
+# Less Rails Bootstrap 3.0.0.wip [![Build Status](https://travis-ci.org/sinfin/less-rails-bootstrap-3.png?branch=master)](https://travis-ci.org/sinfin/less-rails-bootstrap-3)
+
+This fork is using [3.0.0-wip](https://github.com/twitter/bootstrap/tree/3.0.0-wip) [Twitter Bootstrap](https://github.com/twitter/bootstrap) branch. You can read about new bootstrap version [here](https://github.com/twitter/bootstrap/pull/6342).
 
 Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://twitter.github.com/bootstrap).
 
@@ -21,7 +23,7 @@ LESS requires a JavaScript runtime to work. Which one you use depends on your Ru
 gem 'therubyracer'  # If using Ruby
 gem 'therubyrhino'  # If using JRuby
 gem 'jquery-rails'  # If using Bootstrap's JS plugins.
-gem 'less-rails-bootstrap'
+gem 'less-rails-bootstrap', '~> 3.0.0.wip', github: 'sinfin/less-rails-bootstrap-3'
 ```
 
 ## Basic CSS Use
@@ -64,8 +66,6 @@ This gem will directly track the semantic versioning of the Twitter Bootstrap pr
 
 Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests. The current build status is:
 
-[![Build Status](https://secure.travis-ci.org/metaskills/less-rails-bootstrap.png)](http://travis-ci.org/metaskills/less-rails-bootstrap)
-
 We also have a test rails project setup using all the examples documented above. If you make a github issue and complain about something, I will likely forward you to this project.
 
 [https://github.com/metaskills/less-rails-bootstrap-test](https://github.com/metaskills/less-rails-bootstrap-test)
@@ -77,7 +77,7 @@ Here are the steps to update the version of twitter bootstrap used.
 
 * Clone this repository.
 * Clone the [bootstrap repo](https://github.com/twitter/bootstrap) in a twitter/bootstrap directory next to the clone of less-rails-bootstrap done above.
-* Change directories into the twitter/bootstrap clone and do a git checkout on the version you are targeting. For example `git checkout v2.3.0`. This will setup the proper version to copy over.
+* Change directories into the twitter/bootstrap clone and do a git checkout on the version you are targeting. For example `git checkout 3.0.0-wip`. This will setup the proper version to copy over.
 * Back in the less-rails-bootstrap project. Run the `./scripts/update_bootstrap.sh` script.
 * RUN THE TESTS!
 
