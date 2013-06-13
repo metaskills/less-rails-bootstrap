@@ -76,15 +76,7 @@ We also have a test rails project setup using all the examples documented above.
 [https://github.com/metaskills/less-rails-bootstrap-test](https://github.com/metaskills/less-rails-bootstrap-test)
 
 
-## Contributing
-
-Here are the steps to update the version of twitter bootstrap used.
-
-* Clone this repository.
-* Run the `./scripts/update_bootstrap.sh` script with bootstrap repo version tag argument. For example `./scripts/update_bootstrap.sh v2.3.2`.
-* RUN THE TESTS!
-* Send pull request.
-
+## [Contributing](https://github.com/metaskills/less-rails-bootstrap/blob/master/CONTRIBUTING.md)
 
 ## License
 
