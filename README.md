@@ -1,8 +1,9 @@
-# Less Rails Bootstrap 3.0.0-rc1 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=3.0.0-rc1)](https://travis-ci.org/sinfin/less-rails-bootstrap)
+# Less Rails Bootstrap 3.0.0-rc1 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=3.0.0-rc1)](https://travis-ci.org/metaskills/less-rails-bootstrap)
 
-This fork is using [3.0.0-wip](https://github.com/twitter/bootstrap/tree/3.0.0-wip) [Twitter Bootstrap](https://github.com/twitter/bootstrap) branch. You can read about new bootstrap version [here](https://github.com/twitter/bootstrap/pull/6342).
+This fork is using
+[3.0.0-wip](https://github.com/twbs/bootstrap/tree/3.0.0-wip) [Twitter Bootstrap](https://github.com/twbs/bootstrap) branch. You can read about new bootstrap version [here](https://github.com/twitter/bootstrap/pull/6342).
 
-Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://twitter.github.com/bootstrap).
+Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://getbootstrap.com/).
 
 The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 3.1+ asset pipeline. 
 
@@ -23,8 +24,7 @@ LESS requires a JavaScript runtime to work. Which one you use depends on your Ru
 gem 'therubyracer'  # If using Ruby
 gem 'therubyrhino'  # If using JRuby
 gem 'jquery-rails'  # If using Bootstrap's JS plugins.
-gem 'less-rails-bootstrap', '3.0.0.rc1', github:
-'metaskills/less-rails-bootstrap', branch: '3.0.0-rc1'
+gem 'less-rails-bootstrap', '3.0.0.rc1', github: 'metaskills/less-rails-bootstrap', branch: '3.0.0-rc1'
 ```
 
 ## Basic CSS Use
