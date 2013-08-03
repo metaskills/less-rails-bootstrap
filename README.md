@@ -1,4 +1,4 @@
-# Less Rails Bootstrap 3.0.0.wip [![Build Status](https://travis-ci.org/sinfin/less-rails-bootstrap-3.png?branch=master)](https://travis-ci.org/sinfin/less-rails-bootstrap-3)
+# Less Rails Bootstrap 3.0.0-rc1 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=3.0.0-rc1)](https://travis-ci.org/sinfin/less-rails-bootstrap)
 
 This fork is using [3.0.0-wip](https://github.com/twitter/bootstrap/tree/3.0.0-wip) [Twitter Bootstrap](https://github.com/twitter/bootstrap) branch. You can read about new bootstrap version [here](https://github.com/twitter/bootstrap/pull/6342).
 
@@ -23,7 +23,8 @@ LESS requires a JavaScript runtime to work. Which one you use depends on your Ru
 gem 'therubyracer'  # If using Ruby
 gem 'therubyrhino'  # If using JRuby
 gem 'jquery-rails'  # If using Bootstrap's JS plugins.
-gem 'less-rails-bootstrap', '~> 3.0.0.wip', github: 'sinfin/less-rails-bootstrap-3'
+gem 'less-rails-bootstrap', '3.0.0.rc1', github:
+'metaskills/less-rails-bootstrap', branch: '3.0.0-rc1'
 ```
 
 ## Basic CSS Use
