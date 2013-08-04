@@ -1,6 +1,6 @@
 # Less Rails Bootstrap 3.0.0.wip [![Build Status](https://travis-ci.org/sinfin/less-rails-bootstrap-3.png?branch=master)](https://travis-ci.org/sinfin/less-rails-bootstrap-3)
 
-This fork is using [3.0.0-wip](https://github.com/twitter/bootstrap/tree/3.0.0-wip) [Twitter Bootstrap](https://github.com/twitter/bootstrap) branch. You can read about new bootstrap version [here](https://github.com/twitter/bootstrap/pull/6342).
+This fork is using [3.0.0-wip](https://github.com/twbs/bootstrap/tree/3.0.0-wip) [Twitter Bootstrap](https://github.com/twitter/bootstrap) branch. You can read about new bootstrap version [here](https://github.com/twitter/bootstrap/pull/6342).
 
 Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://twitter.github.com/bootstrap).
 
