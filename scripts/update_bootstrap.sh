@@ -27,7 +27,7 @@ fi
 
 if [ ! -d $bs_dir ]; then
     info "Bootstrap not found. Cloning to twitter/bootstrap..."
-    git clone --quiet git://github.com/twitter/bootstrap.git twitter/bootstrap
+    git clone --quiet git://github.com/twbs/bootstrap.git twitter/bootstrap
 fi
 
 cd twitter/bootstrap
