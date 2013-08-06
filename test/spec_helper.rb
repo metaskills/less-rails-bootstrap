@@ -43,8 +43,8 @@ module Less
           File.expand_path File.join(File.dirname(__FILE__), '..')
         end
         
-        def project_vendor_twitter_bootstrap
-          File.join project_root, 'vendor', 'frameworks'
+        def project_app_twitter_bootstrap
+          File.join project_root, 'app', 'frameworks'
         end
 
       end

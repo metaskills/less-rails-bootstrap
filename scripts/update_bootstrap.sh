@@ -2,10 +2,10 @@
 
 bs_dir='./twitter/bootstrap'
 lrb_dir='.'
-lrb_img_dir="$lrb_dir/vendor/assets/images/twitter/bootstrap"
-lrb_js_dir="$lrb_dir/vendor/assets/javascripts/twitter/bootstrap"
-lrb_styles_dir="$lrb_dir/vendor/assets/stylesheets/twitter"
-lrb_fw_dir="$lrb_dir/vendor/frameworks/twitter/bootstrap"
+lrb_img_dir="$lrb_dir/app/assets/images/twitter/bootstrap"
+lrb_js_dir="$lrb_dir/app/assets/javascripts/twitter/bootstrap"
+lrb_styles_dir="$lrb_dir/app/assets/stylesheets/twitter"
+lrb_fw_dir="$lrb_dir/app/frameworks/twitter/bootstrap"
 
 error() {
 echo -e "\e[1;31m"$1"\e[0m"
