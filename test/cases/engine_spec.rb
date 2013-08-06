@@ -8,7 +8,7 @@ class EngineSpec < Less::Rails::Bootstrap::Spec
   
   it 'must append engines assets stylesheets to less-rails load paths' do
     dummy_config.less.paths.must_be_instance_of Array
-    dummy_config.less.paths.must_include project_vendor_twitter_bootstrap
+    dummy_config.less.paths.must_include project_app_twitter_bootstrap
   end
   
 
