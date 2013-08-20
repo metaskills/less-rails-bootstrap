@@ -1,4 +1,4 @@
-# Less Rails Bootstrap 3.0.0-rc1 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=3.0.0-rc1)](https://travis-ci.org/metaskills/less-rails-bootstrap)
+# Less Rails Bootstrap 3.0.0 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=master)](https://travis-ci.org/metaskills/less-rails-bootstrap)
 
 Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://getbootstrap.com/).
 
@@ -21,7 +21,7 @@ LESS requires a JavaScript runtime to work. Which one you use depends on your Ru
 gem 'therubyracer'  # If using Ruby
 gem 'therubyrhino'  # If using JRuby
 gem 'jquery-rails'  # If using Bootstrap's JS plugins.
-gem 'less-rails-bootstrap', '3.0.0.rc1', github: 'metaskills/less-rails-bootstrap', branch: '3.0.0-rc1'
+gem 'less-rails-bootstrap'
 ```
 
 ## Basic CSS Use
