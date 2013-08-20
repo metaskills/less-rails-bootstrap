@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+3.0.0 - TBA
+
+* Update boostrap to 3.0.0
+
 2.3.3 - 03/06/2013
 
 * Update boostrap to 2.3.2.

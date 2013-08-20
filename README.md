@@ -1,6 +1,6 @@
-# Less Rails Bootstrap
+# Less Rails Bootstrap 3.0.0-rc1 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=3.0.0-rc1)](https://travis-ci.org/metaskills/less-rails-bootstrap)
 
-Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://getbootstrap.com/2.3.2/).
+Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://getbootstrap.com/).
 
 The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 3.1+ asset pipeline. 
 
@@ -21,7 +21,7 @@ LESS requires a JavaScript runtime to work. Which one you use depends on your Ru
 gem 'therubyracer'  # If using Ruby
 gem 'therubyrhino'  # If using JRuby
 gem 'jquery-rails'  # If using Bootstrap's JS plugins.
-gem 'less-rails-bootstrap'
+gem 'less-rails-bootstrap', '3.0.0.rc1', github: 'metaskills/less-rails-bootstrap', branch: '3.0.0-rc1'
 ```
 
 ## Basic CSS Use
@@ -32,11 +32,6 @@ Get the full Bootstrap stylesheet with a single line in your `application.css`.
       *= require twitter/bootstrap
     */
     
-If you wish to make use of Bootstraps' responsive features, like the collapsing of your navigation bar on window resize, make sure to include bootstrap-responsive as well.
-
-    /*
-      *= require twitter/bootstrap-responsive
-    */
 
 Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
 
@@ -68,8 +63,6 @@ This gem will directly track the semantic versioning of the Twitter Bootstrap pr
 ## Testing
 
 Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests. The current build status is:
-
-[![Build Status](https://secure.travis-ci.org/metaskills/less-rails-bootstrap.png)](http://travis-ci.org/metaskills/less-rails-bootstrap)
 
 We also have a test rails project setup using all the examples documented above. If you make a github issue and complain about something, I will likely forward you to this project.
 
