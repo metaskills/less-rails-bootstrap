@@ -21,7 +21,7 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
     let(:app_css) { dummy_asset('fonts.css.less') }
 
     it 'uses less-rails asset-url helper for fonts' do
-      app_css.must_include 'url(/assets/twitter/bootstrap/glyphiconshalflings-regular.eot)'
+      app_css.must_include "url('twitter/bootstrap/../fonts/glyphicons-halflings-regular.eot')"
     end
 
   end
