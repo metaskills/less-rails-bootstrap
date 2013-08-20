@@ -1,7 +1,11 @@
 CHANGELOG
 =========
 
-3.0.0 - TBA
+3.0.0.1 - 20/08/2013
+
+* proper 3.0.0 release
+
+3.0.0 (yanked) - 20/08/2013
 
 * Update boostrap to 3.0.0
 
