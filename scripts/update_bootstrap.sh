@@ -69,10 +69,12 @@ info "Copying styles..."
 mkdir -p $lrb_fw_dir
 for f in $bs_dir/less/*.less; do
     bn=$(basename $f)
-    sed -e "s/url('@{glyphicons-font-path}/asset-url('twitter\/bootstrap/g" \
-        -e 's#background-image: url(#background-image: asset-url(#g' \
-        $f > $lrb_fw_dir/$bn
+    cp $f $lrb_fw_dir/$bn
 done
+
+info "Apply patches..."
+sed -i '' 's#^\(@icon-font-path:[[:space:]]*\"\).*\(\";\)#\1twitter/bootstrap/\2#g' $lrb_fw_dir/variables.less
+sed -i '' 's#url(#asset-url(#g' $lrb_fw_dir/*.less
 
 info "Generate bootstrap.js..."
 for f in $lrb_js_dir/*.js; do
