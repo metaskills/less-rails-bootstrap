@@ -15,15 +15,18 @@ lrb_frameworks_dir="$lrb_dir/app/frameworks"
 lrb_fw_dir="$lrb_frameworks_dir/twitter/bootstrap"
 
 error() {
-echo -e "\e[1;31m"$1"\e[0m"
+echo -e -n "\033[1;31m$1"
+echo -e '\033[0m'
 }
 
 success() {
-echo -e "\e[1;32m"$1"\e[0m"
+echo -e -n "\033[1;32m$1"
+echo -e '\033[0m'
 }
 
 info() {
-echo -e "\e[1;34m"$1"\e[0m"
+echo -e -n "\033[1;34m$1"
+echo -e '\033[0m'
 }
 
 if [ $# -ne 1 ] 
