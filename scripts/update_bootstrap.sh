@@ -9,7 +9,7 @@ lrb_js_dir="$lrb_assets_dir/javascripts/twitter/bootstrap"
 lrb_styles_dir="$lrb_assets_dir/stylesheets/twitter"
 
 lrb_bootstrap_js="$lrb_assets_dir/javascripts/twitter/bootstrap.js"
-lrb_bootstrap_less="$lrb_assets_dir/stylesheets/twitter/bootstrap.css.less"
+lrb_bootstrap_less="$lrb_assets_dir/stylesheets/twitter/bootstrap.less"
 
 lrb_frameworks_dir="$lrb_dir/app/frameworks"
 lrb_fw_dir="$lrb_frameworks_dir/twitter/bootstrap"
