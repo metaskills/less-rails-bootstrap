@@ -26,14 +26,39 @@ gem 'less-rails-bootstrap'
 
 ## Basic CSS Use
 
+### Simple way
+
 Get the full Bootstrap stylesheet with a single line in your `application.css`.
 
-    /*
-      *= require twitter/bootstrap
-    */
-    
+```
+/*
+ *= require twitter/bootstrap
+ */
+```    
 
-Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
+### Advanced way
+
+In case when you just want to modify several LESS variables (i.e. change text color, etc.) and don't want to thinking about [Full Control & Customization](https://github.com/metaskills/less-rails-bootstrap-test#full-control--customization) you can run Rails generator:
+
+```
+rails generate less_rails_bootstrap:custom_bootstrap
+```
+
+It generates three files:
+
+* `app/assets/stylesheets/custom_bootstrap/custom_bootstrap.less` - auto-generated file base on bootstrap.less file from original Twitter Bootstrap. Don't modify it!
+* `app/assets/stylesheets/custom_bootstrap/variables.less` - in this file you can override Twitter Bootstrap variables or define own
+* `app/assets/stylesheets/custom_bootstrap/mixins.less` - in this file you can override Twitter Bootstrap mixins or define own
+
+Then just add single line to `application.css`.
+
+```
+/*
+ *= require custom_bootstrap/custom_bootstrap
+ */
+```
+
+> Please see the [less-rails-bootstrap-test](http://github.com/metaskills/less-rails-bootstrap-test) repo for examples that customize the CSS output by using LESS. The "CSS Tests Suites" section of the README and code is what you want to focus on. Also, check out the [LESS syntax](http://lesscss.org/). 
 
 ## Basic JavaScript Use
 
