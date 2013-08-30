@@ -76,8 +76,9 @@ for f in $bs_dir/less/*.less; do
 done
 
 info "Apply patches..."
-sed -i '' 's#^\(@icon-font-path:[[:space:]]*\"\).*\(\";\)#\1twitter/bootstrap/\2#g' $lrb_fw_dir/variables.less
-sed -i '' 's#url(#asset-url(#g' $lrb_fw_dir/*.less
+[[ $(uname -s) == 'Darwin' ]] && ioption=(-i "") || ioption=(-i)
+sed "${ioption[@]}" 's#^\(@icon-font-path:[[:space:]]*\"\).*\(\";\)#\1twitter/bootstrap/\2#g' $lrb_fw_dir/variables.less
+sed "${ioption[@]}" 's#url(#asset-url(#g' $lrb_fw_dir/*.less
 
 info "Generate bootstrap.js..."
 for f in $lrb_js_dir/*.js; do
