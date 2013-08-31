@@ -81,10 +81,7 @@ sed "${ioption[@]}" 's#^\(@icon-font-path:[[:space:]]*\"\).*\(\";\)#\1twitter/bo
 sed "${ioption[@]}" 's#url(#asset-url(#g' $lrb_fw_dir/*.less
 
 info "Generate bootstrap.js..."
-for f in $lrb_js_dir/*.js; do
-    bn=$(basename $f)
-    echo "//= require twitter/bootstrap/$bn" >> $lrb_bootstrap_js
-done
+sed -n "s#.*'js/\([a-z]\{1,\}\.js\)'.*#//= require twitter/bootstrap/\1#p" twitter/bootstrap/Gruntfile.js >> $lrb_bootstrap_js
 
 info "Generate bootstrap.css.less..."
 mkdir -p $lrb_styles_dir
