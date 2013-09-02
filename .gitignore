@@ -6,3 +6,4 @@ test/dummy_app/log/*
 tmp/*
 .DS_Store
 twitter/
+gemfiles/*.lock

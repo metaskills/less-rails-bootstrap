@@ -1,5 +1,6 @@
 require 'bundler'
 require 'rake/testtask'
+require 'appraisal'
 
 Bundler::GemHelper.install_tasks
 
