@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = 'http://github.com/metaskills/less-rails-bootstrap'
   gem.summary       = 'CSS toolkit from Twitter For Rails 3.1 Asset Pipeline'
   gem.description   = 'CSS toolkit from Twitter For Rails 3.1 Asset Pipeline. Best one of all!'
+  gem.license       = 'MIT'
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
