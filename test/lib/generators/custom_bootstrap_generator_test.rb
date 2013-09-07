@@ -12,13 +12,14 @@ class CustomBootstrapGeneratorTest < Rails::Generators::TestCase
     run_generator
   end
 
+  test "content of custom_bootstrap.less was changed" do
+    md5 = Digest::MD5.file(destination_root.join("app/assets/stylesheets/custom_bootstrap/custom_bootstrap.less")).hexdigest
+    assert_equal '1f5b67b27608c7c5db14ad0b9c6cacbb', md5,
+      'Looks like content of custom_bootstrap.less was changed. Please, investigate the reason of this and fix test if these changes is appropriate.'
+  end
+
   test "custom_bootstrap.less is generated" do
-    file_path = destination_root.join("app/assets/stylesheets/custom_bootstrap/custom_bootstrap.less")
-
-    assert_file(file_path, /@import/)
-
-    md5 = Digest::MD5.hexdigest(File.read(file_path))
-    assert_equal '1f5b67b27608c7c5db14ad0b9c6cacbb', md5, 'Looks like content of custom_bootstrap.less was changed. Please, investigate the reason of this and fix test if these changes is appropriate.'
+    assert_file(destination_root.join("app/assets/stylesheets/custom_bootstrap/custom_bootstrap.less"), /@import/)
   end
 
   test "variables.less is generated" do
