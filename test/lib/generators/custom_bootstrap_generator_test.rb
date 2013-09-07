@@ -15,7 +15,7 @@ class CustomBootstrapGeneratorTest < Rails::Generators::TestCase
   test "custom_bootstrap.less is generated" do
     file_path = "app/assets/stylesheets/custom_bootstrap/custom_bootstrap.less"
     assert_file(file_path, /@import/)
-    assert_equal 2312, File.size(File.expand_path(file_path, destination_root))
+    assert_equal 2312, File.size(File.expand_path(file_path, destination_root)), 'Looks like content of custom_bootstrap.less was changed. Please, investigate the reason of this and fix test if these changes is appropriate.'
   end
 
   test "variables.less is generated" do
