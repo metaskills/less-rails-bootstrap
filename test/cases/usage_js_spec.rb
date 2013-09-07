@@ -20,7 +20,7 @@ class UsageJsSpec < Less::Rails::Bootstrap::Spec
     
   end
   
-  describe 'individual.css.less' do
+  describe 'individual.js' do
     
     let(:individual_js) { dummy_asset('individual.js') }
     
