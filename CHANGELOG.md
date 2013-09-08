@@ -1,4 +1,8 @@
 
+# 3.0.3 - unreleased
+
+* Update to less-rails 2.4.2 or higher.
+
 # 3.0.2 - 2013-09-01
 
 * Cross platform update script.

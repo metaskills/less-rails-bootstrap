@@ -40,7 +40,7 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
 
     it 'will render bootstrap variables' do
       link_color_line = line_for_framework_css('framework-linkColor')
-      link_color_line.must_include 'color:#428bca;'
+      link_color_line.must_include 'color:#428bca'
     end
 
   end
