@@ -1,9 +1,8 @@
 *.gem
 .bundle
-Gemfile.lock
+*.lock
 pkg/*
-test/dummy_app/log/*
+*.log
 tmp/*
-.DS_Store
 twitter/
-gemfiles/*.lock
+gemfiles/*.gemfile
