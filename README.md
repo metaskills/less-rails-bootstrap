@@ -85,16 +85,26 @@ Or include plugins individually.
 This gem will directly track the semantic versioning of the Twitter Bootstrap project. Our major and minor versions will always match to theirs, though we may have tiny patch level releases specific to this gem.
 
 
-## Testing
+## Contributing
 
-Simple! Just clone the repo, then run `bundle install` and `bundle exec rake`. The tests will begin to run. We also use Travis CI to run our tests. The current build status is:
+This gem is fully tested from Rails 3.1 to 4. We run our tests on [Travis CI](http://travis-ci.org/metaskills/less-rails-boostrap) in both Ruby 1.9, 2.0, and jRuby 1.9 mode. If you detect a problem, open up a github issue or fork the repo and help out. After you fork or clone the repository, the following commands will get you up and running on the test suite. 
 
-We also have a test rails project setup using all the examples documented above. If you make a github issue and complain about something, I will likely forward you to this project.
+```shell
+$ bundle install
+$ bundle exec rake appraisal:setup
+$ bundle exec rake appraisal test
+```
 
-[https://github.com/metaskills/less-rails-bootstrap-test](https://github.com/metaskills/less-rails-bootstrap-test)
+We use the [appraisal](https://github.com/thoughtbot/appraisal) gem from Thoughtbot to help us generate the individual gemfiles for each Rails version and to run the tests locally against each generated Gemfile. The `rake appraisal test` command actually runs our test suite against all Rails versions in our `Appraisal` file. If you want to run the tests for a specific Rails version, use `rake -T` for a list. For example, the following command will run the tests for Rails 3.2 only.
+
+```shell
+$ bundle exec rake appraisal:rails32 test
+```
+
+Our current build status is:
+[![Build Status](https://secure.travis-ci.org/metaskills/minitest-spec-rails.png)](http://travis-ci.org/metaskills/less-rails-bootstrap) read more in our [CONTRIBUTING](https://github.com/metaskills/less-rails-bootstrap/blob/master/CONTRIBUTING.md) file.
 
 
-## [Contributing](https://github.com/metaskills/less-rails-bootstrap/blob/master/CONTRIBUTING.md)
 
 ## License
 
