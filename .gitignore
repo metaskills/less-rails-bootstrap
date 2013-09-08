@@ -6,3 +6,4 @@ pkg/*
 tmp/*
 twitter/
 gemfiles/*.gemfile
+test/dummy_app/tmp/
