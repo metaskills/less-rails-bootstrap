@@ -1,7 +1,8 @@
 
 # 3.0.3 - unreleased
 
-* Update to less-rails 2.4.2 or higher.
+* Update to less-rails 2.4.2 or higher. Fix initializers for 2.4.2 too.
+* Remove Rails 3.1 with Ruby 2.0 build support. Sprockets will not work!
 
 # 3.0.2 - 2013-09-01
 

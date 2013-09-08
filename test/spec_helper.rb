@@ -1,9 +1,6 @@
-require 'rubygems'
-require 'bundler'
-Bundler.require
+require 'bundler' ; Bundler.require :development, :test
 require 'less-rails-bootstrap'
 require 'minitest/autorun'
-require 'minitest/spec'
 require 'dummy_app/init'
 require 'fileutils'
 
@@ -53,14 +50,11 @@ module Less
         end
         
         def reset_caches
-          dummy_assets.version = SecureRandom.hex(32)
+          version = SecureRandom.hex(32)
+          dummy_config.assets.version = version
+          dummy_assets.version = version
           cache = dummy_assets.cache
-          if cache.is_a? Sprockets::Cache::FileStore
-            path = cache.instance_variable_get(:@root)
-            cache = Sprockets::Cache::FileStore.new(path)
-          else
-            cache.clear
-          end
+          cache.respond_to?(:clear) ? cache.clear : rm_r("#{dummy_tmp}/cache/assets")
         end
         
         def prepare_cache_dir
