@@ -11,10 +11,9 @@ module Dummy
     config.active_support.deprecation = :stderr
     config.cache_store = :memory_store
     config.consider_all_requests_local = true
-    
+    config.eager_load = false
     config.assets.enabled = true
     config.assets.cache_store = config.cache_store
-    
   end
 end
 

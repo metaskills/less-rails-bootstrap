@@ -10,11 +10,9 @@ module Less
   module Rails
     module Bootstrap
       class Spec < MiniTest::Spec
-
         before do
           reset_caches
         end
-
 
         private
 
@@ -36,17 +34,15 @@ module Less
 
         def reset_caches
           dummy_assets.version = SecureRandom.hex(32)
-          dummy_assets.cache.clear
         end
-        
+
         def project_root
           File.expand_path File.join(File.dirname(__FILE__), '..')
         end
-        
+
         def project_app_twitter_bootstrap
           File.join project_root, 'app', 'frameworks'
         end
-
       end
     end
   end
