@@ -1,6 +1,6 @@
 # Creating Issues
 
-If you're having a problem, please see [ISSUES](https://github.com/metaskills/less-rails-bootstrap/blob/master/ISSUES.md) for troubleshooting steps and a guide for how to submit a ticket that will help us solve the problem you are having as quickly as possible.
+If you are having a problem, please see our [ISSUES](https://github.com/metaskills/less-rails-bootstrap/blob/master/ISSUES.md) page for troubleshooting steps and a guide for submitting a ticket that will help us solve the problem you are having as quickly as possible.
 
 ## Contributing
 
