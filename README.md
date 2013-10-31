@@ -1,4 +1,4 @@
-# Less Rails Bootstrap 3.0.0 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=master)](https://travis-ci.org/metaskills/less-rails-bootstrap)
+# Less Rails Bootstrap 3.0.4 [![Build Status](https://travis-ci.org/metaskills/less-rails-bootstrap.png?branch=master)](https://travis-ci.org/metaskills/less-rails-bootstrap)
 
 Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://getbootstrap.com/).
 
