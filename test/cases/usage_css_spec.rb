@@ -7,7 +7,8 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
     let(:app_css) { dummy_asset('application.css') }
 
     it 'will render main bootstrap.less file and all included modules' do
-      app_css.must_include 'Bootstrap v3'
+      app_css.must_include '.text-center' # From type.less
+      app_css.must_include '.panel-default' # From panels.less
     end
 
     it 'must include basic css afterward' do
