@@ -1,5 +1,8 @@
+# 3.0.4 - 2013-10-31
 
-# 3.0.3 - unreleased
+* Update to Twitter Bootstrap 3.0.1
+
+# 3.0.3 - 2013-09-01
 
 * Update to less-rails 2.4.2 or higher. Fix initializers for 2.4.2 too.
 * Remove Rails 3.1 with Ruby 2.0 build support. Sprockets will not work!
