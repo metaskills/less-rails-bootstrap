@@ -83,7 +83,8 @@ done
 info "Apply patches..."
 [[ $(uname -s) == 'Darwin' ]] && ioption=(-i "") || ioption=(-i)
 sed "${ioption[@]}" 's#^\(@icon-font-path:[[:space:]]*\"\).*\(\";\)#\1twitter/bootstrap/\2#g' $lrb_fw_dir/variables.less
-sed "${ioption[@]}" 's#url(#asset-url(#g' $lrb_fw_dir/*.less
+sed "${ioption[@]}" 's# ~"url(\(.*\))"# asset-url(\1)#g' $lrb_fw_dir/*.less
+sed "${ioption[@]}" 's# url(# asset-url(#g' $lrb_fw_dir/*.less
 
 info "Generate bootstrap.js..."
 sed -n "s#.*'js/\([a-z]\{1,\}\.js\)'.*#//= require twitter/bootstrap/\1#p" twitter/bootstrap/Gruntfile.js >> $lrb_bootstrap_js
