@@ -18,9 +18,9 @@ gem 'less-rails-bootstrap', '~> 2.3.3'
 gem 'less-rails-bootstrap', '~> 3.0.0'
 ```
 
-If you are looking old version of Twitter Bootstrap or wrong path to Twitter Bootstrap resources then try to do the following steps:
+If you are looking for old version of Twitter Bootstrap or you're facing wrong path to Twitter Bootstrap resources problem then try to do the following steps:
 
-* reset Asset Pipeline cache use `rake tmp:clear`
+* reset Asset Pipeline cache with `rake tmp:clear`
 * check settings related to caching inside 'environments/*.rb' files
 * remove `assets` directory from `public` directory if it exists in your development environment
 
