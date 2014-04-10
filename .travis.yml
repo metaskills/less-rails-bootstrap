@@ -8,6 +8,6 @@ before_install:
 install:
   - bundle install
 before_script:
-  - bundle exec rake appraisal:setup
+  - bundle exec appraisal install
 script:
-  - bundle exec rake appraisal test
+  - bundle exec appraisal rake test
