@@ -4,11 +4,11 @@ rvm:
   - 2.1.1
   - jruby-19mode
 before_install:
-  - gem install bundler
+  - travis_retry gem install bundler
   - bundle --version
 install:
-  - bundle install
+  - travis_retry bundle install
 before_script:
-  - bundle exec appraisal install
+  - travis_retry bundle exec appraisal install
 script:
   - bundle exec appraisal rake test
