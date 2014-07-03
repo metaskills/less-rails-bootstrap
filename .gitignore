@@ -6,6 +6,6 @@ pkg/*
 test/dummy_app/log/*
 test/dummy_app/tmp/*
 tmp/*
-twitter/
+/twitter/
 gemfiles/*.gemfile
 test/dummy_app/tmp/

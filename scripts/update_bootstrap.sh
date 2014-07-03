@@ -75,16 +75,17 @@ done
 info "Copying styles..."
 # styles
 mkdir -p $lrb_fw_dir
-for f in $bs_dir/less/*.less; do
-    bn=$(basename $f)
+for f in $bs_dir/less/{,**/}*.less; do
+    bn=${f/\.\/twitter\/bootstrap\/less\//}
+    mkdir -p $lrb_fw_dir/$(dirname $bn)
     cp $f $lrb_fw_dir/$bn
 done
 
 info "Apply patches..."
 [[ $(uname -s) == 'Darwin' ]] && ioption=(-i "") || ioption=(-i)
 sed "${ioption[@]}" 's#^\(@icon-font-path:[[:space:]]*\"\).*\(\";\)#\1twitter/bootstrap/\2#g' $lrb_fw_dir/variables.less
-sed "${ioption[@]}" 's# ~"url(\(.*\))"# asset-url(\1)#g' $lrb_fw_dir/*.less
-sed "${ioption[@]}" 's# url(# asset-url(#g' $lrb_fw_dir/*.less
+sed "${ioption[@]}" 's# ~"url(\(.*\))"# asset-url(\1)#g' $lrb_fw_dir/{,**/}*.less
+sed "${ioption[@]}" 's# url(# asset-url(#g' $lrb_fw_dir/{,**/}*.less
 
 info "Generate bootstrap.js..."
 sed -n "s#.*'js/\([a-z]\{1,\}\.js\)'.*#//= require twitter/bootstrap/\1#p" twitter/bootstrap/Gruntfile.js >> $lrb_bootstrap_js

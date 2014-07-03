@@ -14,7 +14,7 @@ class CustomBootstrapGeneratorTest < Rails::Generators::TestCase
 
   test "content of custom_bootstrap.less was changed" do
     md5 = Digest::MD5.file(destination_root.join("app/assets/stylesheets/custom_bootstrap/custom_bootstrap.less")).hexdigest
-    assert_equal '4e87e1db9ef280b02cee47634f975ca1', md5,
+    assert_equal '337291aa6cd4515c56d686f16c641930', md5,
       'Looks like content of custom_bootstrap.less was changed. Please, investigate the reason of this and fix test if these changes are appropriate.'
   end
 
