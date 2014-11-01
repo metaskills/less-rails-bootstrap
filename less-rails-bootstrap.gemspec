@@ -19,6 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'minitest', '>= 4.0'
   gem.add_development_dependency 'guard-minitest'
-  gem.add_development_dependency 'rails',  ['>= 3.1', '<= 4.1']
+  gem.add_development_dependency 'rails',  ['>= 3.1', '<= 4.2']
   gem.add_development_dependency 'appraisal'
 end
