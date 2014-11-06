@@ -1,4 +1,8 @@
-# 3.3.0.0 - 2014-10-01
+# 3.3.0.1 - 2014-11-07
+
+* Update to less-rails 2.6.0.
+
+# 3.3.0.0 - 2014-11-02
 
 * Update to Twitter Bootstrap 3.3.0
 
