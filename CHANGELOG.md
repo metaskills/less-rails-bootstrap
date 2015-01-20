@@ -1,3 +1,7 @@
+# 3.3.2.0 - 2015-01-20
+
+* Update to Twitter Bootstrap 3.3.2
+
 # 3.3.1.0 - 2014-11-13
 
 * Update to Twitter Bootstrap 3.3.1
