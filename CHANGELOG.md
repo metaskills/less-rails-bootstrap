@@ -1,6 +1,7 @@
-# 3.3.2.1 - 2015-04-xx
+# 3.3.4.0 - 2015-04-26
 
 * Bump less-rails dependency to allow Sprockets 3
+* Update to Twitter Bootstrap 3.3.4
 
 # 3.3.2.0 - 2015-01-20
 
