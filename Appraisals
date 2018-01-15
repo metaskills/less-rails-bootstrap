@@ -1,21 +1,19 @@
-appraise "rails31" do
-  gem "rails", "~> 3.1.12"
-  gem "minitest", "~> 4.7.5"
-end if RUBY_VERSION < '2.0.0'
-
-appraise "rails32" do
-  gem "rails", "~> 3.2.17"
-  gem "minitest", "~> 4.7.5"
+appraise 'rails40' do
+  gem 'rails', '~> 4.0.13'
 end
 
-appraise "rails40" do
-  gem "rails", "~> 4.0.4"
+appraise 'rails41' do
+  gem 'rails', '~> 4.1.16'
 end
 
-appraise "rails41" do
-  gem "rails", "~> 4.1.0"
+appraise 'rails42' do
+  gem 'rails', '~> 4.2.8'
 end
 
-appraise "rails42" do
-  gem "rails", "~> 4.2.0"
+appraise 'rails50' do
+  gem 'rails', '~> 5.0.3'
+end
+
+appraise 'rails51' do
+  gem 'rails', '~> 5.1.1'
 end

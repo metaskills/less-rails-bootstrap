@@ -1,14 +1,41 @@
+language: ruby
+cache: bundler
+sudo: false
 rvm:
-  - 1.9.3
-  - 2.0.0
-  - 2.1.1
-  - jruby-19mode
+  - 1.9.3-p551
+  - 2.0.0-p648
+  - 2.1.10
+  - 2.2.7
+  - 2.3.4
+  - 2.4.1
+  - jruby-9.1.9.0
 before_install:
-  - travis_retry gem install bundler
-  - bundle --version
+  - gem install bundler
 install:
-  - travis_retry bundle install
-before_script:
-  - travis_retry bundle exec appraisal install
+  - bundle install --jobs=3 --retry=3
 script:
-  - bundle exec appraisal rake test
+  - bundle exec rake
+gemfile:
+  - gemfiles/rails40.gemfile
+  - gemfiles/rails41.gemfile
+  - gemfiles/rails42.gemfile
+  - gemfiles/rails50.gemfile
+  - gemfiles/rails51.gemfile
+matrix:
+  exclude:
+    - rvm: 1.9.3-p551
+      gemfile: gemfiles/rails50.gemfile
+    - rvm: 1.9.3-p551
+      gemfile: gemfiles/rails51.gemfile
+    - rvm: 2.0.0-p648
+      gemfile: gemfiles/rails50.gemfile
+    - rvm: 2.0.0-p648
+      gemfile: gemfiles/rails51.gemfile
+    - rvm: 2.1.10
+      gemfile: gemfiles/rails50.gemfile
+    - rvm: 2.1.10
+      gemfile: gemfiles/rails51.gemfile
+    - rvm: 2.4.1
+      gemfile: gemfiles/rails40.gemfile
+    - rvm: 2.4.1
+      gemfile: gemfiles/rails41.gemfile
