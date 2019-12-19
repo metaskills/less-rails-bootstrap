@@ -9,8 +9,5 @@ class EngineSpec < Less::Rails::Bootstrap::Spec
   it 'must append engines assets stylesheets to less-rails load paths' do
     assert_instance_of Array, dummy_config.less.paths
     assert_includes dummy_config.less.paths, project_app_twitter_bootstrap
-
   end
-  
-
 end

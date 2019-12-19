@@ -10,7 +10,7 @@ class UsageJsSpec < Less::Rails::Bootstrap::Spec
       files = ['affix', 'alert', 'button', 'carousel', 'collapse', 'dropdown', 'modal',
                'popover', 'scrollspy', 'tab', 'tooltip', 'transition']
       files.each do |file|
-        assert_includes app_js,  "#{file}.js"
+        assert_includes app_js, "#{file}.js"
       end
     end
     

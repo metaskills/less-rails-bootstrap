@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 class UsageCssSpec < Less::Rails::Bootstrap::Spec
 
@@ -12,7 +11,7 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
     end
 
     it 'must include basic css afterward' do
-      assert_includes app_css,  '#other-css { color: red; }',  'From our code afterward.'
+      assert_includes app_css, '#other-css { color: red; }',  'From our code afterward.'
     end
 
   end
@@ -31,11 +30,11 @@ class UsageCssSpec < Less::Rails::Bootstrap::Spec
     before { dummy_config.less.compress = true }
 
     let(:framework_css) { dummy_asset('framework.css') }
-   
+
     it 'will render bootstrap functions' do
       border_radius_line = line_for_framework_css('framework-box-shadow')
-      assert_includes border_radius_line,  '-webkit-box-shadow:4px'
-      assert_includes border_radius_line,  'box-shadow:4px'
+      assert_includes border_radius_line, '-webkit-box-shadow:4px'
+      assert_includes border_radius_line, 'box-shadow:4px'
     end
 
     it 'will render bootstrap variables' do
