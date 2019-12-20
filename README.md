@@ -2,7 +2,7 @@
 
 Bootstrap is Twitter's toolkit for kickstarting your site or app's CSS. It includes base styles for typography, forms, buttons, tables, grid layout, navigation, alerts, and more. To get started -- check out the [Bootstrap docs](http://getbootstrap.com/).
 
-The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 3.x and 4.x asset pipeline.
+The less-rails-bootstrap project hooks into [less-rails](http://github.com/metaskills/less-rails) and [less.rb](http://github.com/cowboyd/less.rb), making Bootstrap's source LESS files, compiled CSS, and JavaScript files available in the Rails 5.x asset pipeline.
 
 The benefits:
 
@@ -87,18 +87,18 @@ This gem will directly track the semantic versioning of the Twitter Bootstrap pr
 
 ## Contributing
 
-This gem is fully tested from Rails 3.1 to 4.1. We run our tests on [Travis CI](http://travis-ci.org/metaskills/less-rails-boostrap) in both Ruby 1.9, 2.0, 2.1, and jRuby 1.9 mode. If you detect a problem, open up a github issue or fork the repo and help out. After you fork or clone the repository, the following commands will get you up and running on the test suite.
+This gem is fully tested for Rails 5.0 to 5.2. If you detect a problem, open up a github issue or fork the repo and help out. After you fork or clone the repository, the following commands will get you up and running on the test suite.
 
 ```shell
-$ bundle install
+$ bundle
 $ bundle exec appraisal install
-$ bundle exec appraisal rake test
+$ bundle exec appraisal rake
 ```
 
-We use the [appraisal](https://github.com/thoughtbot/appraisal) gem from Thoughtbot to help us generate the individual gemfiles for each Rails version and to run the tests locally against each generated Gemfile. The `appraisal rake test` command actually runs our test suite against all Rails versions in our `Appraisal` file. If you want to run the tests for a specific Rails version, use `rake -T` for a list. For example, the following command will run the tests for Rails 3.2 only.
+We use the [appraisal](https://github.com/thoughtbot/appraisal) gem from Thoughtbot to help us generate the individual gemfiles for each Rails version and to run the tests locally against each generated Gemfile. The `appraisal test` command actually runs our test suite against all Rails versions in our `Appraisal` file. If you want to run the tests for a specific Rails version, use `rake -T` for a list. For example, the following command will run the tests for Rails 5.0 only.
 
 ```shell
-$ bundle exec appraisal rails32 rake test
+$ bundle exec appraisal rails50 rake test
 ```
 
 Our current build status is:
@@ -125,6 +125,3 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 Less::Rails is Copyright (c) 2011 Ken Collins, <ken@metaskills.net> and is distributed under the MIT license.
-
-
-

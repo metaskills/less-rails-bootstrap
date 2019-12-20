@@ -12,7 +12,7 @@ Here are the steps to update the version of twitter bootstrap used.
 * Run the tests by doing:
 
 ```
-$ bundle install
-$ bundle exec rake appraisal:setup
-$ bundle exec rake appraisal test
+$ bundle
+$ bundle exec appraisal install
+$ bundle exec appraisal rake
 ```

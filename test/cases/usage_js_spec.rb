@@ -10,12 +10,12 @@ class UsageJsSpec < Less::Rails::Bootstrap::Spec
       files = ['affix', 'alert', 'button', 'carousel', 'collapse', 'dropdown', 'modal',
                'popover', 'scrollspy', 'tab', 'tooltip', 'transition']
       files.each do |file|
-        app_js.must_include "#{file}.js"
+        assert_includes app_js, "#{file}.js"
       end
     end
     
     it 'must include basic js afterward' do
-      app_js.must_include '$(document).ready(function(){...});'
+      assert_includes app_js, '$(document).ready(function(){...});'
     end
     
   end
@@ -25,10 +25,8 @@ class UsageJsSpec < Less::Rails::Bootstrap::Spec
     let(:individual_js) { dummy_asset('individual.js') }
     
     it 'will render bootstrap variables and mixins' do
-      individual_js.must_include 'modal.js'
+      assert_includes individual_js, 'modal.js'
     end
     
   end
-
-
 end
