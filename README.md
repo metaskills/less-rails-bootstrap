@@ -87,7 +87,7 @@ This gem will directly track the semantic versioning of the Twitter Bootstrap pr
 
 ## Contributing
 
-This gem is fully tested for Rails 5.2. We run our tests on [Travis CI](http://travis-ci.org/metaskills/less-rails-boostrap) in both Ruby 1.9, 2.0 and jRuby 9000. If you detect a problem, open up a github issue or fork the repo and help out. After you fork or clone the repository, the following commands will get you up and running on the test suite.
+This gem is fully tested for Rails 5.0 to 5.2. If you detect a problem, open up a github issue or fork the repo and help out. After you fork or clone the repository, the following commands will get you up and running on the test suite.
 
 ```shell
 $ bundle
